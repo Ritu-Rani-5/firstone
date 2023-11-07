@@ -63,5 +63,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'practicle-webapp'
-          slot-name: 'Production'
+          slot-name: ''
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_892A32AF25C14BDB84B4FD812F67CC5F }}
