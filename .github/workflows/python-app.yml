@@ -31,6 +31,6 @@ jobs:
 
       - name: Open Web App in Browser
         run: |
-          az webapp browse -n practicle-webapp
+          az webapp browse -n practicle-webapp --resource-group MyWebAppResources
         env:
           AZURE_WEBAPP_PACKAGE_PATH: .
