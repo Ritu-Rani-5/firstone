@@ -28,3 +28,9 @@ jobs:
           app-name: 'practicle-webapp' # Replace with your Azure Web App name
           slot-name: 'production'
           publish-profile: ${{ secrets.AZURE_APP_SERVICE_PUBLISH_PROFILE }}
+
+      - name: Open Web App in Browser
+        run: |
+          az webapp browse -n practicle-webapp
+        env:
+          AZURE_WEBAPP_PACKAGE_PATH: .
